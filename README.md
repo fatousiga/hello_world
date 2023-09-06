@@ -13,10 +13,10 @@ Creez une clé ssh sur votre poste avec la commande ssh-keygen
 ### Etape 3-b :
 Enregistrer la clé publique sur votre compte github
 
-## Etape 3-c :
+### Etape 3-c :
 Enregistrer la clé privée dans les credentials de votre serveur Jenkins
 
-## Etape 3 alternative
+### Etape 3 alternative
 Si vous n'avez pas la possiblité d'utiliser SSH, créez un Token dans github, et soyez attentif a ce qu'il ait les droits de cloner votre repo
 
 ### Etape 6 :
