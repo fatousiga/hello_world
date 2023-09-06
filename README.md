@@ -18,6 +18,7 @@ Enregistrer la clé privée dans les credentials de votre serveur Jenkins
 
 ### Etape 3 alternative
 Si vous n'avez pas la possiblité d'utiliser SSH, créez un Token dans github, et soyez attentif a ce qu'il ait les droits de cloner votre repo
+puis enregistrez la dans les credentials jenkins
 
 ### Etape 6 :
 Configurer un Job Freestyle, a partir de l'addresse de votre repo, qui compile, teste et stocke les artefacts de ce projet.
