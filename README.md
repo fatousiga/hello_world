@@ -7,14 +7,17 @@ Se creer un compte GitHub
 ### Etape 2 : 
 Faire un Fork de ce repository
 
-### Etape 3 :
+### Etape 3-a :
 Creez une clé ssh sur votre poste avec la commande ssh-keygen
 
-### Etape 4 :
-Enregistrer la clé publique sur votre compte github et lui donner les droits de cloner votre repo
+### Etape 3-b :
+Enregistrer la clé publique sur votre compte github
 
-## Etape 5 :
+## Etape 3-c :
 Enregistrer la clé privée dans les credentials de votre serveur Jenkins
+
+## Etape 3 alternative
+Si vous n'avez pas la possiblité d'utiliser SSH, créez un Token dans github, et soyez attentif a ce qu'il ait les droits de cloner votre repo
 
 ### Etape 6 :
 Configurer un Job Freestyle, a partir de l'addresse de votre repo, qui compile, teste et stocke les artefacts de ce projet.
