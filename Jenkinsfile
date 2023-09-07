@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-            label 'win11'
-    }
+    agent any
     tools {
         maven 'mvn'
     }   
@@ -24,11 +22,9 @@ pipeline {
                         echo "installed"
                     }
                 }
-                stage ('static analysis') {
+                stage ('print') {
                     steps {
-                        withSonarQubeEnv('def') {
-                            bat 'mvn sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.projectkey=hello_world -Dsonar.java.binaries=target'
-                        }
+                        echo "je suis une étape !!!"
                     }
                 }
             }
